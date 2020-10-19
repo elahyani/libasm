@@ -1,0 +1,61 @@
+int		fd;
+	void	*tmp = malloc(5);
+	void	*tmp2 = malloc(5);
+
+	myfile = fopen("test.txt", "r");
+	fd = fileno(myfile);
+	printf("\nret: %lu\n",    read(fd, tmp, 5));
+	printf("\ntmp: %s\n", tmp);
+
+	printf("\nret: %lu\n", ft_read(fd, tmp2, 5));
+	printf("\ntmp2: %s\n", tmp2);int		fd;
+	void	*tmp = malloc(5);
+	void	*tmp2 = malloc(5);
+
+	myfile = fopen("test.txt", "r");
+	fd = fileno(myfile);
+	printf("\nret: %lu\n",    read(fd, tmp, 5));
+	printf("\ntmp: %s\n", tmp);
+
+	printf("\nret: %lu\n", ft_read(fd, tmp2, 5));
+	printf("\ntmp2: %s\n", tmp2);int		fd;
+	void	*tmp = malloc(5);
+	void	*tmp2 = malloc(5);
+
+	myfile = fopen("test.txt", "r");
+	fd = fileno(myfile);
+	printf("\nret: %lu\n",    read(fd, tmp, 5));
+	printf("\ntmp: %s\n", tmp);
+
+	printf("\nret: %lu\n", ft_read(fd, tmp2, 5));
+	printf("\ntmp2: %s\n", tmp2);int		fd;
+	void	*tmp = malloc(5);
+	void	*tmp2 = malloc(5);
+
+	myfile = fopen("test.txt", "r");
+	fd = fileno(myfile);
+	printf("\nret: %lu\n",    read(fd, tmp, 5));
+	printf("\ntmp: %s\n", tmp);
+
+	printf("\nret: %lu\n", ft_read(fd, tmp2, 5));
+	printf("\ntmp2: %s\n", tmp2);int		fd;
+	void	*tmp = malloc(5);
+	void	*tmp2 = malloc(5);
+
+	myfile = fopen("test.txt", "r");
+	fd = fileno(myfile);
+	printf("\nret: %lu\n",    read(fd, tmp, 5));
+	printf("\ntmp: %s\n", tmp);
+
+	printf("\nret: %lu\n", ft_read(fd, tmp2, 5));
+	printf("\ntmp2: %s\n", tmp2);int		fd;
+	void	*tmp = malloc(5);
+	void	*tmp2 = malloc(5);
+
+	myfile = fopen("test.txt", "r");
+	fd = fileno(myfile);
+	printf("\nret: %lu\n",    read(fd, tmp, 5));
+	printf("\ntmp: %s\n", tmp);
+
+	printf("\nret: %lu\n", ft_read(fd, tmp2, 5));
+	printf("\ntmp2: %s\n", tmp2);
