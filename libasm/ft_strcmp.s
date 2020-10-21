@@ -11,9 +11,10 @@ _ft_strcmp:
 			jz	_get_diff
 			cmp [rsi], byte 0
 			jz	_get_diff
-	
-			mov	al, byte [rdi]
-			cmp	al, byte [rsi]
+
+			xor	rcx, rcx
+			mov	cl, byte [rdi]
+			cmp	cl, byte [rsi]
 			jne	_get_diff
 	
 			inc rdi
@@ -33,21 +34,23 @@ _nulls2:
 			ret
 
 _get_diff:	
-			mov	dl, byte [rdi]
-			mov	cl, byte [rsi]
-			cmp dl, cl
+			xor	rdx, rdx
+			xor	rcx, rcx
+			mov	cl, byte [rdi]
+			mov	dl, byte [rsi]
+			cmp cl, dl
 			jg	_get_pos
-			sub dl, cl
-			neg dl
-			neg rdx
+			sub cl, dl
+			neg cl
+			neg rcx
 			jmp	_end
 
 _get_pos:
-			sub	dl, cl
+			sub	cl, dl
 			jmp _end
 
 _end:
 			xor	rax, rax
-			mov rax, rdx
+			mov rax, rcx
 			ret
 

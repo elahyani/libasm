@@ -11,22 +11,22 @@ size_t	ft_read(int, void*, size_t);
 char	*ft_strdup(const char*);
 
 
-/* int		ft_strcmp_c(char *s1, char *s2)
-{
-	int i;
-	int j;
+// int		ft_strcmp_c(char *s1, char *s2)
+// {
+// 	int i;
+// 	int j;
 
-	i = 0;
-	j = 0;
-	while (s1[i] || s2[i])
-	{
-		if (s1[i] != s2[j])
-			return (s1[i] - s2[j]);
-		j++;
-		i++;
-	}
-	return (0);
-} */
+// 	i = 0;
+// 	j = 0;
+// 	while (s1[i] || s2[i])
+// 	{
+// 		if (s1[i] != s2[j])
+// 			return (s1[i] - s2[j]);
+// 		j++;
+// 		i++;
+// 	}
+// 	return (0);
+// }
 
 
 int main() {
@@ -42,8 +42,8 @@ int main() {
 	// printf("strlen: %lu\n\n", strlen("   "));
 	// printf("ft_strlen: %lu\n", ft_strlen("35s4avf83dv3544ad364bv3fadn357rgmne35AG4V6468B4Z83B4684B8ZT3NZYJSHVAEKG98Q634789251&%%&$&&*$^&*I&^"));
 	// printf("strlen: %lu\n", strlen("35s4avf83dv3544ad364bv3fadn357rgmne35AG4V6468B4Z83B4684B8ZT3NZYJSHVAEKG98Q634789251&%%&$&&*$^&*I&^"));
-	printf("ft_strlen: %lu\n", ft_strlen(NULL));
-	printf("   strlen: %lu\n",    strlen(NULL));
+	// printf("ft_strlen: %lu\n", ft_strlen(NULL));
+	// printf("   strlen: %lu\n",    strlen(NULL));
 
 	// char *ft_str = ft_strcpy("hello world", "hola 1337");
 	
@@ -102,15 +102,29 @@ int main() {
 	// printf("8-> %d\n", ft_strcmp_c("", "a"));
 	// printf("8-> %d\n\n",    strcmp("", "a"));
 
-	// char	*str1 = " ";
-	// char	*str2 = "";
+	// char	*str1 = "\xff\xff";
+	// char	*str2 = "\xff";
 	// printf("     strcmp: %d\n",        strcmp(str1, str2));
 	// printf("  ft_strcmp: %d\n",     ft_strcmp(str1, str2));
 	// printf("ft_strcmp_c: %d\n\n", ft_strcmp_c(str1, str2));
 	
-	// printf("     strcmp: %d\n",        strcmp(" ", "  "));
-	// printf("  ft_strcmp: %d\n",     ft_strcmp(" ", "  "));
-	// printf("ft_strcmp_c: %d\n\n", ft_strcmp_c(" ", "  "));
+	
+	// printf("     strcmp: 1|%d|\n",          strcmp("hb", "ha"));
+	// printf("  ft_strcmp: 1|%d|\n\n",     ft_strcmp("hb", "ha"));
+
+	// printf("     strcmp: 2|%d|\n",          strcmp("ha", "hb"));
+	// printf("  ft_strcmp: 2|%d|\n\n",     ft_strcmp("ha", "hb"));
+
+
+	// printf("     strcmp: 3|%d|\n",          strcmp("\xff\xff", "\xff"));
+	// printf("  ft_strcmp: 3|%d|\n\n",     ft_strcmp("\xff\xff", "\xff"));
+
+	// printf("     strcmp: 4|%d|\n",          strcmp("\xff", "\xff\xff"));
+	// printf("  ft_strcmp: 4|%d|\n\n",     ft_strcmp("\xff", "\xff\xff"));
+
+	// printf("     strcmp: 5|%d|\n",          strcmp("ha", "ha"));
+	// printf("  ft_strcmp: 5|%d|\n\n",     ft_strcmp("ha", "ha"));
+	// printf("ft_strcmp_c: %d\n\n", ft_strcmp_c("\xff\xff", "\xff"));
 	// printf("\nret: %lu\n",    read(3, "hhh", 6));
 	// printf("\nret: %lu\n", ft_read(3, "hhh", 6));
 
@@ -125,14 +139,35 @@ int main() {
 	// myfile2 = fopen("test.txt", "r");
 	// fd = fileno(myfile);
 	// fd2 = fileno(myfile2);
-	// printf("\nret: %lu\n",    read(fd, tmp, 300));
+	// printf("ret: %lu\n",      write(1, NULL, 3));
+	// printf("ret: %lu\n\n", ft_write(1, NULL, 3));
+
+	// printf("ret: %lu\n",      write(-1, "bonjour", 7));
+	// printf("ret: %lu\n\n", ft_write(-1, "bonjour", 7));
+
+	// printf("ret: %lu\n",      write(42, "bonjour", 7));
+	// printf("ret: %lu\n\n", ft_write(42, "bonjour", 7));
+
+	// printf("ret: %lu\n",      write(9809, "bonjour", 7));
+	// printf("ret: %lu\n\n", ft_write(9809, "bonjour", 7));
+
+	// printf("ret: %lu\n",      write(98123, "", 1));
+	// printf("ret: %lu\n\n", ft_write(98123, "", 1));
+
+	// printf("ret: %lu\n",      write(42, NULL, 7));
+	// printf("ret: %lu\n\n", ft_write(42, NULL, 7));
+
+	// printf("ret: %lu\n",      write(1, NULL, 3));
+	// printf("ret: %lu\n\n", ft_write(1, NULL, 3));
+	
+	// printf("\nret: %lu\n",    read(98123, tmp, 1));
 	// printf("\ntmp: %s\n", tmp);
 
-	// printf("\nret: %lu\n", ft_read(fd2, tmp2, 300));
+	// printf("\nret: %lu\n", ft_read(98123, tmp2, 1));
 	// printf("\ntmp2: %s\n", tmp2);
 
-	// printf("   strdup: %s\n",    strdup("Hello world"));
-	// printf("ft_strdup: %s\n", ft_strdup("Hello world"));
+	printf("___strdup: |%s|\n",    strdup("Hello world"));
+	printf("ft_strdup: |%s|\n", ft_strdup("Hello world"));
 	
 
 	return 0;

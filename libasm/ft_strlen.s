@@ -5,14 +5,12 @@
 _ft_strlen: 
 	    xor		rcx, rcx
 		cmp		rdi, byte 0
-		; jz		_null
+		jz		_null
+		jmp		_loop
 
-; _null:
-; 		xor		rax, rax
-; 		xor		rcx, rcx
-; 		mov		rcx, 1
-; 		neg		rcx
-; 		jmp		_end
+_null:
+		mov		rcx, 0
+		jmp		_end
 		
 
 _loop:
