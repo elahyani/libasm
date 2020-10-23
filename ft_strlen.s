@@ -12,7 +12,6 @@ _null:
 		mov		rcx, 0
 		jmp		_end
 		
-
 _loop:
 	    cmp     [rdi], byte 0
 		jz		_end

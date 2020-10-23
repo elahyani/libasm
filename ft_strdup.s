@@ -7,6 +7,8 @@
 _ft_strdup:
 			xor		r8, r8
 			xor		r9, r9
+			cmp		rdi, byte 0
+			je		_null
 			push	rdi
 			call	_ft_strlen
 			pop		rdi 	
@@ -27,7 +29,10 @@ _ft_strdup:
 			call	_ft_strcpy		;rdi, rsi
 			jmp		_end
 
+_null:
+			mov		rax, 0
+			jmp 	_end
+
 _end:
 			ret
-
 
