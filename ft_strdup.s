@@ -3,7 +3,6 @@
 	extern	_ft_strlen
 	extern	_ft_strcpy
 	extern	_malloc
-	extern	___error
 
 _ft_strdup:
 			xor		r8, r8
